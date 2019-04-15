@@ -1,0 +1,22 @@
+{
+  "name": "mywebsite",
+  "version": "1.0.0",
+  "description": "Hrithik Lacximicant's website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "env-cmd ./config/dev.env nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.19"
+  },
+  "devDependencies": {
+    "env-cmd": "^8.0.2"
+  }
+}

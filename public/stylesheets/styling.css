@@ -1,0 +1,169 @@
+/* Nav / Navbar Styles
+===================================*/
+
+body{
+	background-image: url("alberta-attraction-banff-417074.jpg");
+	background-size: cover;
+	background-position: center top;
+	background-attachment: fixed;
+	font-family: 'Titillium Web', sans-serif;
+	min-height: 100%
+}
+
+
+html{
+	/*height: 100%*/
+	min-height: 100vh;
+	position: relative;
+}
+
+.jumbotron {
+	margin-top: 100px;
+	background-color: rgba(22, 22, 22, 0.7); 
+	color: white;
+	font-family: 'Mukta', sans-serif;
+	padding-bottom: 55px;
+	margin-bottom: 476px
+}
+
+.footer-icons a{
+	color:white;
+}
+
+.work-hyperlinks:hover{
+	text-decoration: none;
+}
+
+.footer-icons i:hover{
+	color:darkgray;
+	transition-duration: 0.3s;
+}
+
+.footer-info a:hover {
+	text-decoration: none;
+}
+
+#me{
+	height: 270px;
+	width: 240px;
+	margin-right: 95px;
+	border-color: black;
+}
+
+hr{
+	border: 0;
+    height: 1px;
+    background: #afafaf8f;
+	margin-right: 500px;
+	margin-left: 10px
+}
+
+#footer hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+	background-image: linear-gradient(to right, rgba(48, 47, 47, 0), #333, rgba(48, 47, 47, 0));
+	margin: 4px 0;
+}
+.navbar {
+	background-color: rgba(22, 22, 22, 1);
+	border-bottom: none;
+	padding: 20px 0;
+	transition-duration: 0.6s;
+}
+
+.text-area{
+	background-color: rgba(22, 22, 22, 0.7); 
+	padding-left: 40px;
+	padding-right: 40px;
+	padding: 15px;
+	border-radius: .3rem;
+	margin-top: 95px;
+	border: none;
+	color:darkgray;
+
+}
+
+#portfolio-text-area{
+	margin-bottom: 60px;
+}
+
+
+#contact-text-area{
+	margin-bottom: 430px;
+}
+
+
+footer{
+	/* position: absolute; */
+	/* margin-top: 50px; */
+	bottom: 0;
+	padding: 1rem;
+	width: 100%;
+	background-color: rgba(22, 22, 22, 0.97); 
+	height: 8rem;
+	z-index: 1030;
+}
+
+.text-header{
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 700;
+	font-weight: bold;
+	color: rgb(187, 187, 187);
+}
+
+.text-subheading{
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 600;
+	font-weight: bold;
+}
+
+
+button{
+	outline: none;
+}
+
+
+/* CHANGING FOOTER PLACEMENT IN RESPECT TO WEB PAGE SIZE */
+@media (min-width: 576px) {
+	.navbar, .navbar-scroll{
+		background-color: rgba(22, 22, 22, 0.7);
+	}
+	.navbar-scroll{
+		margin: 0 20% !important;
+	}
+}
+
+@media (max-width: 575px){
+	footer{
+		height: 10rem;
+	}
+	.jumbotron{
+		margin-bottom: 60%;
+	}
+	#contact-text-area{
+		margin-bottom: 290px;
+	}
+	#work-text-area{
+		margin-bottom: 60%; 
+	}
+
+
+}
+
+
+
+/* jQuery Styles
+===================================*/
+.navbar-scroll {
+	background-color: rgba(22, 22, 22, 1);
+	padding: 0	;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+	transition-duration: 0.6s;
+	margin: 0;
+}
+
+/* .nav-dropdown-scroll {
+	background: #e7eaea;
+	box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.4);
+} */

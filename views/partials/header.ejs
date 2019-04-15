@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RiTz - My web page</title>
+ 
+    <link rel="icon" href="/stylesheets/favicon.png" sizes="16x16" type="image/png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://fonts.googleapis.com/css?family=Mukta|Titillium+Web:400,600,700" rel="stylesheet">
+    
+        
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/styling.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-dark navbar-expand-sm px-3 px-md-0 fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/"><i class="fas fa-code pr-1"></i> Hrithik</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <% if(currentURL === "/" ){ %>
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <% }else{ %>
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <% } %> 
+            <% if(currentURL === "/profile" ){ %>
+            <li class="nav-item active">
+              <a class="nav-link" href="/profile">Portfolio <span class="sr-only">(current)</span></a>
+            </li>
+            <% }else{ %>
+            <li class="nav-item">
+              <a class="nav-link" href="/profile">Portfolio <span class="sr-only">(current)</span></a>
+            </li>
+            <% } %>
+            <% if(currentURL === "/work" ){ %>            
+            <li class="nav-item active">
+              <a class="nav-link" href="/work">My Work <span class="sr-only">(current)</span></a>
+            </li>
+            <% } else { %>
+            <li class="nav-item">
+              <a class="nav-link" href="/work">My Work <span class="sr-only">(current)</span></a>
+            </li>
+            <% } %>
+          </ul>
+          <ul class="navbar-nav ml-auto pr-3">
+            <% if(currentURL === "/contact" ){ %>      
+            <li class="nav-item active">  
+              <a class="nav-link" href="/contact">Contact</a>
+            </li>
+            <% }else{ %>
+            <li class="nav-item">  
+              <a class="nav-link" href="/contact">Contact</a>
+            </li>
+            <% } %>
+          </ul>
+          <div class= "footer-icons" class="flex-icons d-flex justify-content-center mx-4">
+            <a href="http://github.com/ritz07"><i class="fab fa-github fa-1x">  </i> </a>
+            <a href="http://www.instagram.com/hrithik764/?hl=en"> <i class="fab fa-instagram fa-1x mx-4"> </i> </a>
+            <a href="https://www.facebook.com/hrithik.lacximicant"> <i class="fab fa-facebook-square fa-1x"> </i> </a>
+          </div>
+        </div>
+      </nav>

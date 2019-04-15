@@ -1,0 +1,20 @@
+
+<% include ./partials/header %>
+
+      <div id="contact-text-area" class="container animated fadeInDown fast mt-5">
+        <div class="text-area">
+          <form method="/contact" action="POST">
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Enter message</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark">Submit</button>
+          </form>
+        </div>
+      </div>
+      
+<% include ./partials/footer %>
