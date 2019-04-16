@@ -3,18 +3,25 @@
 
       <div id="contact-text-area" class="container animated fadeInDown fast mt-5">
         <div class="text-area">
-          <form method="/contact" action="POST">
+          <form action='/contact' method='POST' >
             <div class="form-group">
-              <label for="exampleFormControlInput1">Email address</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              <label>Email address</label>
+              <input type="text" name="email" class="form-control" placeholder="name@example.com">
             </div>
             <div class="form-group">
-              <label for="exampleFormControlTextarea1">Enter message</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+              <label>Subject</label>
+              <input type="text" name="subject" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Enter message</label>
+              <textarea class="form-control" name="content" rows="5"></textarea>
             </div>
             <button type="submit" class="btn btn-dark">Submit</button>
           </form>
+          <p class="mt-4">Or alternatively email me at: hrithik7132@gmail.com </p>
         </div>
       </div>
+
+
       
 <% include ./partials/footer %>

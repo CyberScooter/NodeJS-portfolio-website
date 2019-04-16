@@ -1,40 +1,34 @@
-const express = require("express"),
-      app = express(),
-      bodyParser = require("body-parser")
+const express     = require("express"),
+      app         = express(),
+      session     = require('express-session'),
+      cookieParser= require('cookie-parser'),
+      bodyParser  = require("body-parser"),
+      indexRoutes = require('./routes/index.js'),
+      flash       = require('connect-flash')
 
 app.use(bodyParser.urlencoded({extended:true}));
-//allows files in dir "public" to be used
 app.use(express.static("public"));
-//makes the default files in the view dir as ejs
 app.set("view engine", "ejs");
 
+app.use(flash())
 
-app.use( (req, res, next) => {
-    res.locals.currentURL = req.url;
-    next();
- });
+app.use(cookieParser());
+app.use(session({
+    secret: process.env.SECRET,
+    saveUninitialized: true,
+    resave: false
+}))
 
 const port = process.env.PORT || 3000
 
+app.use( (req, res, next) => {
+    res.locals.currentURL = req.url;
+    res.locals.error = req.flash("error");
+    res.locals.success = req.flash("success");
+    next();
+ });
 
-//HOME=============================================================
-app.get("/", function(req, res){
-    res.render("landing");
-})
-
-app.get("/profile", (req, res) => {
-    res.render("index");
-})
-
-app.get("/contact", (req, res) => {
-    res.render("contact");
-})
-
-app.get("/work", (req, res) => {
-    res.render("work")
-})
-
-
+ app.use(indexRoutes);
 
 app.listen(port, function(){
     console.log("Server is running...");
