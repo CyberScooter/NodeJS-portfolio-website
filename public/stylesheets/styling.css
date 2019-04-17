@@ -33,7 +33,7 @@ body{
 	text-decoration: none;
 }
 
-.footer-info a:hover {
+.footer-item a:hover {
 	text-decoration: none;
 }
 
@@ -99,14 +99,13 @@ footer hr {
 
 .text-header{
 	font-family: 'Titillium Web', sans-serif;
-	font-size: 700;
-	font-weight: bold;
+	font-weight: 700;
 	color: rgb(187, 187, 187);
 }
 
 .text-subheading{
 	font-family: 'Titillium Web', sans-serif;
-	font-size: 600;
+	font-weight: 600;
 	font-weight: bold;
 }
 
@@ -175,6 +174,10 @@ button{
 	}
 	#myself{
 		padding: 0 20%;
+	}
+	#footer-text {
+		font-size: 13px;
+		margin-top: 20px;
 	}
 }
 
