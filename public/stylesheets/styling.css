@@ -20,7 +20,7 @@ body{
 	color: white;
 	font-family: 'Mukta', sans-serif;
 	padding-bottom: 55px;
-	margin-bottom: 476px
+	margin-bottom: 476px;
 }
 
 .footer-icons a{
@@ -47,7 +47,7 @@ body{
 }
 
 
-#me{
+#myself img{
 	height: 270px;
 	width: 240px;
 	border-color: black;
@@ -142,6 +142,7 @@ button{
 	}
 	.jumbotron{
 		margin-bottom: 60%;
+		text-align: center;
 	}
 	#contact-text-area{
 		margin-bottom: 290px;
