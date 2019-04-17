@@ -19,7 +19,7 @@ app.use(session({
     resave: false
 }))
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 8080
 
 app.use( (req, res, next) => {
     res.locals.currentURL = req.url;
