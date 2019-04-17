@@ -144,6 +144,10 @@ button{
 	#header-icons a {
 		margin: 0 5%;
 	}
+	#myself img{
+		margin-bottom: 20px;
+		margin-left: 50px;
+	}
 	#myself{
 		padding-left: 20px;
 	}
@@ -154,17 +158,20 @@ button{
 
 @media (max-width: 768px){
 	#myself{
-		padding: 0 27%;
+		padding: 0 24%;
 	}
-}
-
-@media (max-width: 575px){
-	footer{
-		height: 10rem;
+	hr{
+		margin-right: 10px;
 	}
 	.jumbotron{
 		margin-bottom: 60%;
 		text-align: center;
+	}
+}
+
+@media (max-width: 450px){
+	footer{
+		height: 10rem;
 	}
 	#contact-text-area{
 		margin-bottom: 290px;
@@ -174,6 +181,9 @@ button{
 	}
 	#myself{
 		padding: 0 20%;
+	}
+	#myself img{
+		margin-bottom: 20px;
 	}
 	#footer-text {
 		font-size: 13px;
