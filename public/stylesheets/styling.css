@@ -134,7 +134,7 @@ button{
 	}
 }
 
-/* OPTIMISATION FOR MOBILE DEVICES */
+/* OPTIMISATION FOR SMALL DEVICES */
 
 @media (max-width: 992px){
 	#header-icons{
