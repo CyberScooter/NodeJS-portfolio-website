@@ -6,6 +6,8 @@ const express     = require("express"),
       indexRoutes = require('./routes/index.js'),
       flash       = require('connect-flash')
 
+require('dotenv').config()
+
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"));
 app.set("view engine", "ejs");
